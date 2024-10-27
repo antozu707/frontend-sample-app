@@ -9,24 +9,71 @@ export const NavBar = () => {
   }
   return (
     <nav className='nav-bar'>
-      <NavLink
-        className={navLinkClass}
-        to='/'
-      >
-        Inicio
-      </NavLink>
-      <NavLink
-        className={navLinkClass}
-        to='/lightbulb'
-      >
-        Ampolleta
-      </NavLink>
-      <NavLink
-        className={navLinkClass}
-        to='/practicas'
-      >
-        Inicio
-      </NavLink>
+      <ul className='ulist'>
+        <li>
+          <NavLink
+            className={navLinkClass}
+            to='/'>
+            Inicio
+          </NavLink>
+        </li>
+
+        <li>
+          <NavLink
+            className={navLinkClass}
+            to='/mis_practicas'>
+            Mis prácticas
+          </NavLink>
+        </li>
+
+        <li>
+          <NavLink
+            className={navLinkClass}
+            to='/mis_datos'>
+          Mis datos
+          </NavLink>
+        </li>
+
+        <li>
+          <NavLink
+            className={navLinkClass}
+            to='/ofertas'>
+            Ofertas
+          </NavLink>
+        </li>
+
+        <li>
+          <NavLink
+            className={navLinkClass}
+            to='/estadisticas'>
+            Estadísticas
+          </NavLink>
+        </li>
+
+        <li>
+          <NavLink
+            className={navLinkClass}
+            to='/avance'>
+            Avance
+          </NavLink>
+        </li>
+
+        <li>
+          <NavLink
+            className={navLinkClass}
+            to='/informacion'>
+            Información
+          </NavLink>
+        </li>
+
+        <li>
+          <NavLink
+            className={navLinkClass}
+            to='/contacto'>
+            Contacto
+          </NavLink>
+        </li>
+      </ul>
     </nav>
   )
 }
