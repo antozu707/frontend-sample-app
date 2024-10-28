@@ -3,7 +3,8 @@
   margin-left: 0%;
   color: #fff;
   text-decoration: none;
-  padding: 20px;
+  padding: 5% 20px 5%;
+  font-size: medium;
 
   &--active {
     background: #e65100 !important;
@@ -13,4 +14,9 @@
 
 .nav-bar__link:hover {
   background-color: #2c2c2c
+}
+
+.nav-bar__link:active {
+  background-color: #515151 !important;
+  transition: 150ms ease-in-out;
 }

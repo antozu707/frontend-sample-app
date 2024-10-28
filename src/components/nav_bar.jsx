@@ -21,7 +21,7 @@ export const NavBar = () => {
         <li>
           <NavLink
             className={navLinkClass}
-            to='/mis_practicas'>
+            to='/practicas'>
             Mis prácticas
           </NavLink>
         </li>
@@ -29,7 +29,7 @@ export const NavBar = () => {
         <li>
           <NavLink
             className={navLinkClass}
-            to='/mis_datos'>
+            to='/datos'>
           Mis datos
           </NavLink>
         </li>
@@ -73,6 +73,7 @@ export const NavBar = () => {
             Contacto
           </NavLink>
         </li>
+
       </ul>
     </nav>
   )
