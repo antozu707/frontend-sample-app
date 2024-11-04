@@ -3,10 +3,10 @@ import React from "react";
 export const infoPracticas = [
     {
         tipo: "Industrial",
-        estado: "No iniciada"
+        estado: "Iniciar"
     },
     {
         tipo: "Profesional",
-        estado: "No iniciada"
+        estado: "Iniciar"
     }
 ]

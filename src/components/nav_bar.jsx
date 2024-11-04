@@ -10,13 +10,6 @@ export const NavBar = () => {
   return (
     <nav className='nav-bar'>
       <ul className='ulist'>
-        <li>
-          <NavLink
-            className={navLinkClass}
-            to='/'>
-            Inicio
-          </NavLink>
-        </li>
 
         <li>
           <NavLink
