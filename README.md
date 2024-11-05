@@ -1,35 +1,26 @@
 # frontend-sample-app
 
-Basic Frontend Development Environment to start an app with Webpack
+Contiene un frontend simple para una página utilizando `React`.
+Se realizó un fork desde el repositorio original de https://github.com/alexarenasf/frontend-sample-app.
 
-This repo includes `Webpack` to start an environment to build frontend views using `React`.
 
-### Requirements
+### Requisitos
 
 - Node >= 16.13.1
 - npm >= 8.1.2
 
-### Quick start
+### Start
 
-Install dependences
+Instalar las dependiencias con npm
 
 ```
 npm install
 ```
 
-Launch environment
+Ejecutar el entorno 
 
 ```
 npm run dev
 ```
 
-Now you can open http://localhost:5050
-
-### Packages included
-
-- [Webpack](https://webpack.js.org/)
-- [React Router](https://reactrouter.com/en/main)
-
-### About stylesheets
-
-- Sample stylesheets were written using the [BEM](https://getbem.com/) structure
+Se puede visualizar el frontend en http://localhost:5050
