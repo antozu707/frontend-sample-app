@@ -4,6 +4,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import PracticasApp from '../pages/home'
 import Practicas from '../pages/practicas'
 import Ofertas from '../pages/ofertas'
+import Avance from '../pages/avance'
 import di_icon_unofficial from '../assets/di.png'
 
 import NavBar from '../components/nav_bar'
@@ -23,6 +24,7 @@ const Layout = () => {
               <Route path='/' element={<PracticasApp />} />
               <Route path='/practicas' element={<Practicas />} />
               <Route path='/ofertas' element={<Ofertas />} />
+              <Route path='/avance' element={<Avance />} />
             </Routes>
           </div>
         </div>
