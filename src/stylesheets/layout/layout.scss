@@ -43,6 +43,15 @@ $secondary: #1e1e1e;
     padding: 1px;
 }
 
+.row #encurso {
+    flex-direction: row;
+    width: 20%;
+    text-align: center;
+    background-color: $naranjo;
+    border-radius: 3px;
+    align-items: flex-end;
+}
+
 .diImg {
     max-width: 80%;
     max-height: 80%;
