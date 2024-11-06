@@ -1,4 +1,10 @@
-# frontend-sample-app
+# Proyecto de INF-322
+
+## Integrantes
+
+* Jesús Escanilla Alarcón
+* Catalina Jara Broughton
+* Antonia Zúñiga González
 
 Contiene un frontend simple para una página utilizando `React`.
 Se realizó un fork desde el repositorio original de https://github.com/alexarenasf/frontend-sample-app.
