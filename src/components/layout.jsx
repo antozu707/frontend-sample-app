@@ -14,14 +14,14 @@ const Layout = () => {
     <BrowserRouter>
       <div className='layout'>
         <div className='header'>
-        <NavLink to='/home' style={{ marginBottom: '10px', marginTop: '20px', marginLeft: '15px' }}><img src={di_icon_unofficial} alt='di_unofficial' style={{ width: '50px', cursor: 'pointer' }}/></NavLink>
+        <NavLink to='/' style={{ marginBottom: '10px', marginTop: '20px', marginLeft: '15px' }}><img src={di_icon_unofficial} alt='di_unofficial' style={{ width: '50px', cursor: 'pointer' }}/></NavLink>
           <h1 className='layout__title'>Sistema de Prácticas</h1>
         </div>
         <div className='container'>
           <NavBar />
           <div className='layout__page'>
             <Routes>
-              <Route path='/home' element={<PracticasApp />} />
+              <Route path='/' element={<PracticasApp />} />
               <Route path='/practicas' element={<Practicas />} />
               <Route path='/ofertas' element={<Ofertas />} />
               <Route path='/avance' element={<Avance />} />
