@@ -22,8 +22,24 @@ export const NavBar = () => {
         <li>
           <NavLink
             className={navLinkClass}
-            to='/datos'>
-          Mis datos
+            to='/perfil'>
+          Perfil
+          </NavLink>
+        </li>
+
+        <li>
+          <NavLink
+            className={navLinkClass}
+            to='/avance'>
+            Avance
+          </NavLink>
+        </li>
+
+        <li>
+          <NavLink
+            className={navLinkClass}
+            to='/postulaciones'>
+            Mis postulaciones
           </NavLink>
         </li>
 
@@ -46,24 +62,8 @@ export const NavBar = () => {
         <li>
           <NavLink
             className={navLinkClass}
-            to='/avance'>
-            Avance
-          </NavLink>
-        </li>
-
-        <li>
-          <NavLink
-            className={navLinkClass}
             to='/informacion'>
             Información
-          </NavLink>
-        </li>
-
-        <li>
-          <NavLink
-            className={navLinkClass}
-            to='/contacto'>
-            Contacto
           </NavLink>
         </li>
 
