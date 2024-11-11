@@ -55,7 +55,9 @@ function Ofertas() {
   };
 
   return (
-    <div>
+    
+    <div style={{ marginLeft: '250px', padding: '20px', width: '900px', borderRadius: '10px' }}>
+
       {currentOffers.map((offer) => (
         <div key={offer.id} style={{
           border: '2px solid #ff6600',
