@@ -15,8 +15,8 @@ function Postulaciones() {
   }
 
   return (
-    <div style={{ color: 'white', padding: '20px' }}>
-      <h2 style={{ color: 'orange', fontSize: '24px' }}>Mis postulaciones</h2>
+    <div style={{ marginLeft:'250px' , color: 'white', padding: '20px' }}>
+      <h2 style={{ color: '#ff6600', fontSize: '24px' }}>Mis postulaciones</h2>
       
       <table style={{ width: '100%', borderCollapse: 'collapse' }}>
         <thead>
@@ -65,7 +65,7 @@ const styles = {
     backgroundColor: '#333',
     color: 'white',
     padding: '10px',
-    borderBottom: '2px solid orange',
+    borderBottom: '2px solid #ff6600',
     textAlign: 'left',
   },
   cell: {
@@ -76,7 +76,7 @@ const styles = {
     backgroundColor: '#222',
   },
   cancelButton: {
-    backgroundColor: 'orange',
+    backgroundColor: '#ff6600',
     color: 'black',
     border: 'none',
     padding: '5px 10px',
@@ -97,7 +97,7 @@ const styles = {
     margin: '0 5px',
   },
   pageNumber: {
-    color: 'orange',
+    color: '#ff6600',
     fontWeight: 'bold',
     padding: '5px',
   }
