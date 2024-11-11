@@ -5,6 +5,7 @@ import PracticasApp from '../pages/home'
 import Practicas from '../pages/practicas'
 import Ofertas from '../pages/ofertas'
 import Avance from '../pages/avance'
+import Postulaciones from '../pages/postulaciones'
 import di_icon_unofficial from '../assets/di.png'
 
 import NavBar from '../components/nav_bar'
@@ -25,6 +26,7 @@ const Layout = () => {
               <Route path='/practicas' element={<Practicas />} />
               <Route path='/ofertas' element={<Ofertas />} />
               <Route path='/avance' element={<Avance />} />
+              <Route path='/postulaciones' element={<Postulaciones />} />
             </Routes>
           </div>
         </div>
