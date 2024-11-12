@@ -9,6 +9,7 @@ import Postulaciones from '../pages/postulaciones'
 import di_icon_unofficial from '../assets/di.png'
 
 import NavBar from '../components/nav_bar'
+//import NavBarHorizontal from '../components/nav_barhorizontal'
 
 const Layout = () => {
   return (
