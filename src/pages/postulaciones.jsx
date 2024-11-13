@@ -1,24 +1,22 @@
 import React, { useState } from 'react';
 
 function Postulaciones() {
-  // Ejemplo de datos de postulaciones
   const [postulaciones, setPostulaciones] = useState([
     { id: 1, fecha: '11/11/2024', oferta: 'Banco de Chile, Práctica Data Scientist', estado: 'Pendiente' },
     { id: 2, fecha: '11/10/2024', oferta: 'Samsung, Práctica Desarrollador Software', estado: 'Rechazada' },
   ]);
 
-  // Función para cancelar una postulación
+
   function handleCancel(id) {
-    // Lógica para cancelar la postulación (ej. actualización de estado)
     setPostulaciones(postulaciones.map(p => p.id === id ? { ...p, estado: 'Cancelada' } : p));
     alert('Postulación cancelada');
   }
 
   return (
-    <div style={{ marginLeft:'250px' , color: 'white', padding: '20px' }}>
-      <h2 style={{ color: '#ff6600', fontSize: '24px' }}>Mis postulaciones</h2>
+    <div style={{  marginLeft:'250px', color: 'white', padding: '20px' }}>
+      <h1 style={{ textAlign: 'left', color: '#fff' }}>Mis postulaciones</h1>
       
-      <table style={{ width: '100%', borderCollapse: 'collapse' }}>
+      <table style={{ textAlign: 'center', width: '900px', borderCollapse: 'collapse' }}>
         <thead>
           <tr>
             <th style={styles.headerCell}>Fecha postulación</th>
@@ -38,7 +36,7 @@ function Postulaciones() {
                   <button 
                     onClick={() => handleCancel(postulacion.id)} 
                     style={styles.cancelButton}>
-                    Cancelar Postulación
+                    Cancelar postulación
                   </button>
                 ) : (
                   '-'
@@ -49,7 +47,7 @@ function Postulaciones() {
         </tbody>
       </table>
 
-      {/* Paginación simple (si hay muchas postulaciones) */}
+      
       <div style={styles.pagination}>
         <button style={styles.pageButton}>&lt;</button>
         <span style={styles.pageNumber}>1</span>
@@ -59,7 +57,6 @@ function Postulaciones() {
   );
 }
 
-// Estilos en línea
 const styles = {
   headerCell: {
     backgroundColor: '#333',
