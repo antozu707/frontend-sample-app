@@ -21,6 +21,11 @@ function Avance() {
     setBitacoraText("");
   };
 
+  const handleDiscardBitacora = () => {
+    setShowForm(false);
+    setBitacoraText("");
+  };
+
   const handleConfirmationClose = () => {
     setShowConfirmation(false);
   };
@@ -35,14 +40,14 @@ function Avance() {
         <div
           style={{
             float: 'right',
-            backgroundColor: '#ff6600',
+            
             color: '#fff',
             padding: '5px 10px',
             borderRadius: '5px',
             marginTop: '-95px',
           }}
         >
-          En curso
+          Estado: En curso
         </div>
         <p>Llevas {horasCompletadas} horas</p>
         <div style={{ backgroundColor: '#e0e0e0', borderRadius: '5px', overflow: 'hidden', height: '20px' }}>
@@ -73,7 +78,6 @@ function Avance() {
         <p style={{ fontWeight: 'bold' }}>Quedan {horasRestantes.toFixed(1)} horas pendientes</p>
       </div>
 
-      {/* Formulario de bitácora */}
       {showForm && (
         <div style={{ margin: '20px auto', width: '800px', border: '2px solid #ff6600', padding: '15px', borderRadius: '10px' }}>
           <h3>Añadir bitácora</h3>
@@ -83,21 +87,25 @@ function Avance() {
             onChange={(e) => setBitacoraText(e.target.value)}
             style={{
               width: '100%',
-              maxWidth: '750px',  // Ajusta el ancho máximo
+              maxWidth: '750px',
               height: '80px',
               marginBottom: '10px',
               borderRadius: '5px',
               padding: '10px',
-              resize: 'vertical',  // Permite que el usuario ajuste la altura sin cambiar el ancho
+              resize: 'vertical',
             }}
           ></textarea>
-          <button onClick={handleSaveBitacora} style={{ backgroundColor: '#ff6600', color: '#fff', border: 'none', padding: '10px', borderRadius: '5px' }}>
+
+          <button onClick={handleDiscardBitacora} style={{ backgroundColor: '#ff6600', color: '#fff', margin: '5px', border: 'none', padding: '10px', borderRadius: '5px' }}>
+            Descartar
+          </button>
+          <button onClick={handleSaveBitacora} style={{ backgroundColor: '#ff6600', color: '#fff', margin: '5px', border: 'none', padding: '10px', borderRadius: '5px' }}>
             Guardar
           </button>
+
         </div>
       )}
 
-      {/* Confirmación de guardado */}
       {showConfirmation && (
         <div style={{
           position: 'fixed', top: '50%', left: '50%', transform: 'translate(-50%, -50%)',
