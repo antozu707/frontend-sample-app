@@ -40,6 +40,7 @@ function Ofertas() {
   const indexOfLastOffer = currentPage * offersPerPage;
   const indexOfFirstOffer = indexOfLastOffer - offersPerPage;
   const currentOffers = offers.slice(indexOfFirstOffer, indexOfLastOffer);
+  const [selectedOfferId, setSelectedOfferId] = useState(null);
 
   const paginate = (pageNumber) => setCurrentPage(pageNumber);
 
@@ -47,8 +48,19 @@ function Ofertas() {
     setOffers(offers.map((offer) =>
       offer.id === id ? { ...offer, postulado: true } : offer
     ));
+    setSelectedOfferId(id);
     setShowPopup(true);
   };
+
+  const handleCancel = (id) => { 
+    if (selectedOfferId !== null) {
+      setOffers(prevOffers => prevOffers.map(offer =>
+        offer.id === selectedOfferId ? { ...offer, postulado: false } : offer
+      ));
+    }
+    setShowPopup(false);
+  };
+  
 
   const closePopup = () => {
     setShowPopup(false);
@@ -129,10 +141,25 @@ function Ofertas() {
             cursor: 'pointer'
           }}>X</button>
           <p style={{ color: '#000000' }}><strong>¡Has postulado correctamente!</strong></p>
+          <button 
+            onClick={handleCancel} 
+            style={{ 
+              backgroundColor: '#ff6600',
+              color: 'white',
+              border: 'none',
+              margin: '5px',
+              padding: '10px 20px',
+              borderRadius: '5px',
+              cursor: 'pointer'
+            }}
+          >
+            Cancelar 
+          </button>
           <button onClick={closePopup} style={{
             backgroundColor: '#ff6600',
             color: 'white',
             border: 'none',
+            margin: '5px',
             padding: '10px 20px',
             borderRadius: '5px',
             cursor: 'pointer',
@@ -143,7 +170,6 @@ function Ofertas() {
         </div>
       )}
 
-      {/* Fondo para el popup */}
       {showPopup && (
         <div onClick={closePopup} style={{
           position: 'fixed',
