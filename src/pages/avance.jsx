@@ -97,7 +97,7 @@ function Avance() {
           ></textarea>
 
           <button onClick={handleDiscardBitacora} style={{ backgroundColor: '#ff6600', color: '#fff', margin: '5px', border: 'none', padding: '10px', borderRadius: '5px' }}>
-            Descartar
+            Salir
           </button>
           <button onClick={handleSaveBitacora} style={{ backgroundColor: '#ff6600', color: '#fff', margin: '5px', border: 'none', padding: '10px', borderRadius: '5px' }}>
             Guardar
