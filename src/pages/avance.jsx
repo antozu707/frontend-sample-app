@@ -31,7 +31,7 @@ function Avance() {
   };
 
   return (
-    <div style={{ marginLeft: '250px', padding: '20px', width: '1000px', borderRadius: '10px' }}>
+    <div style={{ marginLeft: '650px', padding: '20px', width: '1000px', borderRadius: '10px' }}>
       <h1 style={{ textAlign: 'left' }}>Avance</h1>
 
       <div style={{ border: '2px solid #ff6600', textAlign: 'left', padding: '15px', borderRadius: '10px', margin: '20px auto', width: '800px' }}>

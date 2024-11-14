@@ -13,7 +13,7 @@ function Postulaciones() {
   }
 
   return (
-    <div style={{  marginLeft:'250px', color: 'white', padding: '20px' }}>
+    <div style={{  marginLeft:'600px', color: 'white', padding: '20px' }}>
       <h1 style={{ textAlign: 'left', color: '#fff' }}>Mis postulaciones</h1>
       
       <table style={{ textAlign: 'center', width: '900px', borderCollapse: 'collapse' }}>
