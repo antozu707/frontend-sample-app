@@ -34,7 +34,7 @@ const Layout = () => {
               </NavLink>
             </div>
             <div className='layout__title'>
-              <h2 >Sistema de Prácticas</h2>
+              <h2>Sistema de Prácticas</h2>
             </div>
             <div className="bell-div">
               <button className="notification-btn" onClick={() => setOpenMenuPracticas((prev) => !prev)}>

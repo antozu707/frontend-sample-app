@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 
 function PracticasApp() {
   return (
@@ -16,9 +17,11 @@ function PracticasApp() {
           textAlign: 'center'
         }}>
           <h2 style={{ color: '#fff' }}>¿Necesitas realizar<br /> tu práctica?</h2>
-          <button style={{ backgroundColor: '#ff6600', color: '#fff', border: 'none', padding: '10px 20px', borderRadius: '4px', cursor: 'pointer' }}>
-            Postula aquí
-          </button>
+          <NavLink to={"/ofertas"}>
+            <button style={{ backgroundColor: '#ff6600', color: '#fff', border: 'none', padding: '10px 20px', borderRadius: '4px', cursor: 'pointer' }}>
+              Postula aquí
+            </button>
+          </NavLink>
         </div>
 
         <div style={{
@@ -31,12 +34,17 @@ function PracticasApp() {
         }}>
           <h2 style={{ color: '#fff' }}>Revisa la guía de introducción a prácticas</h2>
           
-          <button style={{ backgroundColor: '#ff6600', color: '#fff', border: 'none', padding: '10px 20px', borderRadius: '4px', margin: '5px', cursor: 'pointer' }}>
-            GUÍA
-          </button>
-          <button style={{ backgroundColor: '#ff6600', color: '#fff', border: 'none', padding: '10px 20px', borderRadius: '4px', margin: '5px', cursor: 'pointer' }}>
-            VIDEO
-          </button>
+          <a href="https://drive.google.com/file/d/1jLci7N4Z3PwNB6IY5OoEmJ3Cpc4mCEDp/view" target='_blank'>
+            <button  style={{ backgroundColor: '#ff6600', color: '#fff', border: 'none', padding: '10px 20px', borderRadius: '4px', margin: '5px', cursor: 'pointer' }}>
+              GUÍA
+            </button>
+          </a>
+          
+          <a href="https://www.youtube.com/watch?v=zCjyUdq32Ic" target='_blank'>
+            <button style={{ backgroundColor: '#ff6600', color: '#fff', border: 'none', padding: '10px 20px', borderRadius: '4px', margin: '5px', cursor: 'pointer' }}>
+              VIDEO
+            </button>
+          </a>
         </div>
       </div>
     </div>
@@ -44,7 +52,14 @@ function PracticasApp() {
 
       <div style={{ marginLeft: '620px', width: '880px', marginTop: '20px', fontSize: '18px', border: '2px solid #ff6600', borderRadius: '8px', padding: '10px' }}>
         <h2>¿Tienes dudas?</h2>
-        <p>Echa un vistazo a las <button style={{ backgroundColor: '#ff6600', color: '#fff', border: 'none', padding: '5px 10px', borderRadius: '4px', cursor: 'pointer' }}>Preguntas Frecuentes</button> o escribe a <a href="mailto:correo@usm.cl" style={{ color: '#ff6600', textDecoration: 'none' }}>correo@usm.cl</a></p>
+        <p>Echa un vistazo a las 
+          <NavLink to='/informacion'>
+            <button style={{ backgroundColor: '#ff6600', color: '#fff', border: 'none', padding: '5px 10px', borderRadius: '4px', cursor: 'pointer' }}>
+              Preguntas Frecuentes
+            </button>
+          </NavLink>
+           o escribe a <a href="mailto:correo@usm.cl" style={{ color: '#ff6600', textDecoration: 'none' }}>correo@usm.cl</a>
+        </p>
       </div>
     
     </div>
